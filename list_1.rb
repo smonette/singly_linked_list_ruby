@@ -3,17 +3,26 @@ class List
 ## Start List Node
   class Node
     attr_accessor :value, :next
+
+    def initialize()
+      @value = nil
+      @next = nil
+    end
+
   end
 
 ## Then the Basic List
 
   def initialize()
+    # Node.value = nil
+    # Node.next = nil
   end
 
   # empty?
 
-  # head
-
+  def head
+    List::Node.value
+  end
   # head=
 
   # prepend
@@ -28,7 +37,7 @@ class List
 
   def insert(index, value)
   end
-  
+
   def insert_before(index, value)
   end
 
